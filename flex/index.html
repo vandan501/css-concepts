@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>30-2-23 |Flex lec2</title>
+    <style>
+        .cont{
+            display: flex;
+            /* flex-wrap: wrap; */
+            height: 300px;
+            /* width: 400px; */
+            /* margin: 50px; */
+            /* padding: 10px; */
+            border: 1px solid black;
+            justify-content: center;
+            /* flex-direction: row-revers; */
+            /* align-items: center; */
+            /* align-items: center; */
+            /* align-content: center; */
+            
+        }
+         .box{
+        /* margin: 30px;         
+            */
+            width: 500px;
+            height: 100px;
+            /* margin: 10px; */
+        } 
+        .box1{
+            background-color: aqua;
+            /* order: 1; */
+            flex-shrink: 5;
+        }
+        .box2{
+            background-color: red;
+            /* flex-grow: 2; */
+            flex-shrink: 6;
+        }
+
+        .box3{
+            background-color: yellow;
+            flex-shrink: 4;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- flex -->
+    <div class="cont">
+        <div class="box box1">
+            box1
+        </div>
+        <div class="box box2">
+            box2
+        </div>
+        <div class="box box3">
+            box3
+        </div>
+       
+    </div>
+</body>
+</html>

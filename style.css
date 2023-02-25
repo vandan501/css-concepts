@@ -1,0 +1,10 @@
+body{
+    background-color: black;
+}
+.heading{
+    color: red;
+    font-size: 43;
+    text-align: center;
+    text-decoration: underline  ;
+    border: 2px solid yellow;
+}

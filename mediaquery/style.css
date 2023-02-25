@@ -1,0 +1,39 @@
+body{
+    background-color: red;
+}
+div{
+    font-size: x-large;
+    text-align: center;
+}
+div::after{
+    content: 'welcome to the demo';
+}
+
+@media(max-width:400px){
+    body{
+        background-color: green;
+    }
+    div::after{
+        content: 'very small';
+    }
+}
+
+@media (min-width :768px){
+    /* if view  port is atlease 900px then this style will apply */
+    body{
+        background-color: purple;
+    }
+    div::after{
+        content: 'waaah its working';
+    }
+}
+
+@media (min-width :900px){
+    /* if view  port is atlease 900px then this style will apply */
+    body{
+        background-color: aquamarine;
+    }
+    div::after{
+        content: 'waaah its working';
+    }
+}

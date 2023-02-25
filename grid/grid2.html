@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Grid Layout</title>
+    <style>
+        .container{
+            display: grid;
+            height: 720px;
+            background-color: lightcoral;
+             grid-template-columns: repeat(3,1fr);  
+            grid-template-rows: 120px 500px 120px; 
+        }
+        .cont{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);  
+        }
+        .cont img{
+            margin: 4px;
+            width: 250px;
+            align-items: center;
+        }
+        .box
+        {
+            /* width: 100px;
+            height: 100px; */
+        } 
+        .box1{
+            margin: 20px;
+            background-color: #3765ff;
+            grid-column-start: 1;
+            column-gap: 10px;
+            grid-column-end: 4;
+
+        }
+        .box2{
+            background-color: #3765ff;
+            margin: 20px;
+            align-items: center;
+            padding: 150px;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+        .box3{
+            background-color: rgb(255, 28, 65);
+            grid-template-columns: repeat(3,1fr); 
+            margin: 15px;
+            padding: 70px;
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+        .box4{
+            background-color: #3765ff;
+            grid-column-start: 1;
+            grid-column-end: 4 ;
+            margin: 20px;
+        }
+         h1{
+            text-align: center;
+            font-weight: bolder;
+            color: white;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1"><h1>Header</h1></div>
+        <div class="box box2"> <h1>Aside</h1></div>
+        <div class="box box3"><h1>Article</h1>
+            <div class="cont">
+                <div class="img"><img src="https://cdn.pwskills.com/user/profile_pictures/6294e0ab69607943313b8eac.jpg" alt=""></div>  
+                <div class="img"><img src="https://cdn.pwskills.com/user/profile_pictures/63a45203734f0638dd31c183.jpg" alt=""></div>  
+                <div class="img"><img src="https://cdn.pwskills.com/user/profile_pictures/HITESH%20CHOUDHARY.jpg" alt=""></div>  
+             </div>
+        
+        </div>
+        <div class="box box4"><h1>Footer</h1></div>
+    </div>        
+</body>
+</html>
